@@ -12,6 +12,8 @@
 		78864A272062E49800BDC7E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78864A252062E49800BDC7E7 /* Main.storyboard */; };
 		78864A292062E49800BDC7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78864A282062E49800BDC7E7 /* Assets.xcassets */; };
 		78864A2C2062E49800BDC7E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78864A2A2062E49800BDC7E7 /* LaunchScreen.storyboard */; };
+		78864A342062FF3D00BDC7E7 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78864A332062FF3D00BDC7E7 /* LeftViewController.swift */; };
+		F8F8A66D176196175401BD8C /* Pods_ParkStash_Coding_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90024A04C76FA5912E593805 /* Pods_ParkStash_Coding_Challenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		78864A282062E49800BDC7E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78864A2B2062E49800BDC7E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78864A2D2062E49800BDC7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78864A332062FF3D00BDC7E7 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		90024A04C76FA5912E593805 /* Pods_ParkStash_Coding_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkStash_Coding_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E5DEBD3E43C76E145D12679 /* Pods-ParkStash Coding Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkStash Coding Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkStash Coding Challenge/Pods-ParkStash Coding Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		B3D2D7AF5B4D5C97865CF5C0 /* Pods-ParkStash Coding Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkStash Coding Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkStash Coding Challenge/Pods-ParkStash Coding Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F8A66D176196175401BD8C /* Pods_ParkStash_Coding_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				78864A202062E49800BDC7E7 /* ParkStash Coding Challenge */,
 				78864A1F2062E49800BDC7E7 /* Products */,
+				E64055E1AC406FCC425FC70F /* Pods */,
+				79097CD431D46ECF38D97E95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				78864A282062E49800BDC7E7 /* Assets.xcassets */,
 				78864A2A2062E49800BDC7E7 /* LaunchScreen.storyboard */,
 				78864A2D2062E49800BDC7E7 /* Info.plist */,
+				78864A332062FF3D00BDC7E7 /* LeftViewController.swift */,
 			);
 			path = "ParkStash Coding Challenge";
+			sourceTree = "<group>";
+		};
+		79097CD431D46ECF38D97E95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90024A04C76FA5912E593805 /* Pods_ParkStash_Coding_Challenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E64055E1AC406FCC425FC70F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3D2D7AF5B4D5C97865CF5C0 /* Pods-ParkStash Coding Challenge.debug.xcconfig */,
+				9E5DEBD3E43C76E145D12679 /* Pods-ParkStash Coding Challenge.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78864A302062E49800BDC7E7 /* Build configuration list for PBXNativeTarget "ParkStash Coding Challenge" */;
 			buildPhases = (
+				C051CBDCC2BC566910C956AB /* [CP] Check Pods Manifest.lock */,
 				78864A1A2062E49800BDC7E7 /* Sources */,
 				78864A1B2062E49800BDC7E7 /* Frameworks */,
 				78864A1C2062E49800BDC7E7 /* Resources */,
+				21E72301D8D6B9CDAD7350AD /* [CP] Embed Pods Frameworks */,
+				F9DB0A782FBC6EDEDCDE0325 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,11 +161,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21E72301D8D6B9CDAD7350AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ParkStash Coding Challenge/Pods-ParkStash Coding Challenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkStash Coding Challenge/Pods-ParkStash Coding Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C051CBDCC2BC566910C956AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParkStash Coding Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9DB0A782FBC6EDEDCDE0325 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkStash Coding Challenge/Pods-ParkStash Coding Challenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		78864A1A2062E49800BDC7E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78864A342062FF3D00BDC7E7 /* LeftViewController.swift in Sources */,
 				78864A242062E49800BDC7E7 /* ViewController.swift in Sources */,
 				78864A222062E49800BDC7E7 /* AppDelegate.swift in Sources */,
 			);
@@ -272,6 +357,7 @@
 		};
 		78864A312062E49800BDC7E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3D2D7AF5B4D5C97865CF5C0 /* Pods-ParkStash Coding Challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +372,7 @@
 		};
 		78864A322062E49800BDC7E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E5DEBD3E43C76E145D12679 /* Pods-ParkStash Coding Challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

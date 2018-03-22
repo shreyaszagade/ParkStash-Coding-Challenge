@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import SideMenu
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        SideMenuManager.default.menuPresentMode = .menuSlideIn
+        SideMenuManager.default.menuFadeStatusBar = false
     }
 
     override func didReceiveMemoryWarning() {
