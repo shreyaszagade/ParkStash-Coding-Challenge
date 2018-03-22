@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,17 +31,17 @@
                                 <rect key="frame" x="8" y="64" width="75" height="75"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilepic" translatesAutoresizingMaskIntoConstraints="NO" id="zE6-z4-yfe">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        <rect key="frame" x="8" y="2.5" width="60" height="60"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="zE6-z4-yfe" firstAttribute="width" secondItem="5xq-HM-PDu" secondAttribute="width" id="IUI-sf-eds"/>
-                                    <constraint firstItem="zE6-z4-yfe" firstAttribute="centerY" secondItem="5xq-HM-PDu" secondAttribute="centerY" id="LsG-ZP-0rP"/>
+                                    <constraint firstItem="zE6-z4-yfe" firstAttribute="width" secondItem="5xq-HM-PDu" secondAttribute="width" multiplier="0.8" id="IUI-sf-eds"/>
+                                    <constraint firstItem="zE6-z4-yfe" firstAttribute="centerY" secondItem="5xq-HM-PDu" secondAttribute="centerY" constant="-5" id="LsG-ZP-0rP"/>
                                     <constraint firstItem="zE6-z4-yfe" firstAttribute="centerX" secondItem="5xq-HM-PDu" secondAttribute="centerX" id="Oa1-he-bkn"/>
                                     <constraint firstAttribute="height" constant="75" id="Wt3-5I-yUD"/>
                                     <constraint firstAttribute="width" constant="75" id="k6o-tt-iFj"/>
-                                    <constraint firstItem="zE6-z4-yfe" firstAttribute="height" secondItem="5xq-HM-PDu" secondAttribute="height" id="yTk-h3-Chb"/>
+                                    <constraint firstItem="zE6-z4-yfe" firstAttribute="height" secondItem="5xq-HM-PDu" secondAttribute="height" multiplier="0.8" id="yTk-h3-Chb"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Sameer!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRS-pL-cxP">
@@ -55,23 +56,23 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="krG-el-71A">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="krG-el-71A">
                                 <rect key="frame" x="0.0" y="169" width="375" height="498"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="t1n-6U-hKJ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="leftMenuTableCell" id="t1n-6U-hKJ" customClass="LeftMenuTableCell" customModule="ParkStash_Coding_Challenge" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t1n-6U-hKJ" id="ObC-dn-25q">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pastbooking" translatesAutoresizingMaskIntoConstraints="NO" id="cF5-im-9ls">
-                                                    <rect key="frame" x="20" y="5" width="43.5" height="33.5"/>
+                                                    <rect key="frame" x="20" y="7" width="43.5" height="30"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book A Spot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="729-jB-jaV">
-                                                    <rect key="frame" x="71.5" y="11.5" width="95" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="71.5" y="13.5" width="85" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -80,10 +81,23 @@
                                                 <constraint firstItem="729-jB-jaV" firstAttribute="leading" secondItem="cF5-im-9ls" secondAttribute="trailing" constant="8" symbolic="YES" id="7VM-MG-tWL"/>
                                                 <constraint firstItem="cF5-im-9ls" firstAttribute="leading" secondItem="ObC-dn-25q" secondAttribute="leading" constant="20" id="TyC-zZ-D0o"/>
                                                 <constraint firstItem="729-jB-jaV" firstAttribute="centerY" secondItem="cF5-im-9ls" secondAttribute="centerY" id="YDL-Gi-nFD"/>
-                                                <constraint firstAttribute="bottom" secondItem="cF5-im-9ls" secondAttribute="bottom" constant="5" id="asC-Re-KtZ"/>
-                                                <constraint firstItem="cF5-im-9ls" firstAttribute="top" secondItem="ObC-dn-25q" secondAttribute="top" constant="5" id="hWA-wA-yzm"/>
+                                                <constraint firstAttribute="bottom" secondItem="cF5-im-9ls" secondAttribute="bottom" constant="7" id="asC-Re-KtZ"/>
+                                                <constraint firstItem="cF5-im-9ls" firstAttribute="top" secondItem="ObC-dn-25q" secondAttribute="top" constant="7" id="hWA-wA-yzm"/>
                                                 <constraint firstItem="cF5-im-9ls" firstAttribute="width" secondItem="ObC-dn-25q" secondAttribute="height" id="iSa-zp-A3D"/>
                                             </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="itemImageView" destination="cF5-im-9ls" id="BMS-jD-Auj"/>
+                                            <outlet property="itemTitleLabel" destination="729-jB-jaV" id="fvL-rs-f66"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="leftMenuTableSection" id="EG8-Kb-RbM">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EG8-Kb-RbM" id="SKU-7J-uri">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.81977712563451777" green="0.81977712563451777" blue="0.81977712563451777" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -108,6 +122,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Rk1-Bt-gH0"/>
+                    <connections>
+                        <outlet property="greetingMessageLabel" destination="eRS-pL-cxP" id="6Jr-Zv-vSH"/>
+                        <outlet property="profilePicHolderView" destination="5xq-HM-PDu" id="s4N-RJ-I9x"/>
+                        <outlet property="profilePicImageView" destination="zE6-z4-yfe" id="3PY-AO-q03"/>
+                        <outlet property="ratingLabel" destination="mLj-HA-quY" id="X5b-Wx-uWn"/>
+                        <outlet property="tableView" destination="krG-el-71A" id="9ZB-Yp-ExU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -124,9 +145,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wtz-dc-QMJ">
                                 <rect key="frame" x="164.5" y="350.5" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="5S5-qk-74U" kind="presentation" id="Xm4-UR-ec3"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -136,7 +154,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QBy-0y-W6j"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zhS-IJ-4Ee"/>
+                    <navigationItem key="navigationItem" id="zhS-IJ-4Ee">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="RHw-cM-Xv1">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="5S5-qk-74U" kind="presentation" id="5zj-lm-QBV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Trx-Yc-bcy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -171,6 +196,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6YX-bc-voc">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.27075586140000002" green="0.7227752221" blue="0.39615416539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -183,6 +209,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="menu" width="64" height="64"/>
         <image name="pastbooking" width="64" height="64"/>
         <image name="profilepic" width="64" height="64"/>
     </resources>

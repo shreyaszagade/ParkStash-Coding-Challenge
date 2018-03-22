@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78274C082063D71E00C7740D /* LeftMenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78274C072063D71E00C7740D /* LeftMenuTableCell.swift */; };
 		78864A222062E49800BDC7E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78864A212062E49800BDC7E7 /* AppDelegate.swift */; };
 		78864A242062E49800BDC7E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78864A232062E49800BDC7E7 /* ViewController.swift */; };
 		78864A272062E49800BDC7E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78864A252062E49800BDC7E7 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78274C072063D71E00C7740D /* LeftMenuTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuTableCell.swift; sourceTree = "<group>"; };
 		78864A1E2062E49800BDC7E7 /* ParkStash Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ParkStash Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78864A212062E49800BDC7E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78864A232062E49800BDC7E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				78864A2A2062E49800BDC7E7 /* LaunchScreen.storyboard */,
 				78864A2D2062E49800BDC7E7 /* Info.plist */,
 				78864A332062FF3D00BDC7E7 /* LeftViewController.swift */,
+				78274C072063D71E00C7740D /* LeftMenuTableCell.swift */,
 			);
 			path = "ParkStash Coding Challenge";
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			files = (
 				78864A342062FF3D00BDC7E7 /* LeftViewController.swift in Sources */,
 				78864A242062E49800BDC7E7 /* ViewController.swift in Sources */,
+				78274C082063D71E00C7740D /* LeftMenuTableCell.swift in Sources */,
 				78864A222062E49800BDC7E7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
