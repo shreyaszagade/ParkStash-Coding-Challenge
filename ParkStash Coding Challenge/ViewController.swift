@@ -14,6 +14,7 @@ import GoogleMaps
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var mapView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,9 +22,7 @@ class ViewController: UIViewController {
         SideMenuManager.default.menuFadeStatusBar = false
         
         
-        let autocompleteController = GMSAutocompleteViewController()
-        autocompleteController.delegate = self
-        present(autocompleteController, animated: true, completion: nil)
+        
         
     }
 
@@ -32,7 +31,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func searchButtonClicked(_ sender: UIBarButtonItem) {
+        let autocompleteController = GMSAutocompleteViewController()
+        autocompleteController.delegate = self
+        present(autocompleteController, animated: true, completion: nil)
+    }
+    
 }
 
 extension ViewController: GMSAutocompleteViewControllerDelegate {
@@ -44,6 +48,17 @@ extension ViewController: GMSAutocompleteViewControllerDelegate {
         print("Place address: \(place.formattedAddress)")
         print("Place attributions: \(place.attributions)")
         dismiss(animated: true, completion: nil)
+        
+        //
+        let camera = GMSCameraPosition.camera(withLatitude: place.coordinate.latitude, longitude: place.coordinate.longitude, zoom: 18.0)
+        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        view = mapView
+        
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: place.coordinate.latitude, longitude: place.coordinate.longitude)
+        marker.title = place.name
+        marker.map = mapView
+        
     }
     
     func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {

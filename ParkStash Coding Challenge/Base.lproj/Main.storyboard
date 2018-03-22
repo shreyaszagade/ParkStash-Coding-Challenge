@@ -141,7 +141,19 @@
                     <view key="view" contentMode="scaleToFill" id="smq-aB-XXk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjm-OJ-Vz2">
+                                <rect key="frame" x="0.0" y="64" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bjm-OJ-Vz2" firstAttribute="leading" secondItem="QBy-0y-W6j" secondAttribute="leading" id="RkA-Wz-Bus"/>
+                            <constraint firstItem="bjm-OJ-Vz2" firstAttribute="height" secondItem="smq-aB-XXk" secondAttribute="height" id="ebr-tN-P9e"/>
+                            <constraint firstItem="bjm-OJ-Vz2" firstAttribute="top" secondItem="QBy-0y-W6j" secondAttribute="top" id="z4f-LS-a6M"/>
+                            <constraint firstItem="bjm-OJ-Vz2" firstAttribute="width" secondItem="smq-aB-XXk" secondAttribute="width" id="zcr-uC-Mdg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QBy-0y-W6j"/>
                     </view>
                     <navigationItem key="navigationItem" id="zhS-IJ-4Ee">
@@ -151,7 +163,16 @@
                                 <segue destination="5S5-qk-74U" kind="presentation" id="5zj-lm-QBV"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Vol-Eb-69m">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="searchButtonClicked:" destination="DdX-Bc-F33" id="MoX-te-Fnb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="bjm-OJ-Vz2" id="nsb-ZR-aPE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Trx-Yc-bcy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -199,7 +220,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="menu" width="64" height="64"/>
+        <image name="menu" width="42" height="42"/>
         <image name="pastbooking" width="64" height="64"/>
         <image name="profilepic" width="64" height="64"/>
     </resources>
