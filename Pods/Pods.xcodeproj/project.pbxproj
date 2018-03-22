@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		09F22F18A22CCAC95FB49E33AF712632 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		154DD6D04BFD3415A15B425DCE36895A /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0049F4BA49D06E8F4C1A0DF192A1FB11 /* SideMenuManager.swift */; };
+		154DD6D04BFD3415A15B425DCE36895A /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38605FA2FEC4FA8C2EB7259426137A08 /* SideMenuManager.swift */; };
 		443B61E3AD90D9E7FB1E7D9B3DCD130C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		44732B31AE803ADE1643603FC620FD69 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FF13F0BB1AB42B2F1C6A72A59BD82F /* UITableViewVibrantCell.swift */; };
-		484BF8FBA94D507AA8C7056C25C750F2 /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E72E3ED37D9B76098CC2B9BB49D386DF /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48C2E9290C2FC3381D09966D29FA9F7F /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35093DD994A172D53932151A6DBAEBC3 /* SideMenu-dummy.m */; };
-		6619AA9FA7DB768BADE95D69D282E826 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4F5E4E267C03BAC23C64C2DEC825B6 /* UISideMenuNavigationController.swift */; };
+		44732B31AE803ADE1643603FC620FD69 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CA87EEBCB318A4B7F23FD304924EFF /* UITableViewVibrantCell.swift */; };
+		484BF8FBA94D507AA8C7056C25C750F2 /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08404347FCEAA12B5B0FD9B1B6B0A2A3 /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48C2E9290C2FC3381D09966D29FA9F7F /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 663E5F49077395BC1837B970948776C7 /* SideMenu-dummy.m */; };
+		6619AA9FA7DB768BADE95D69D282E826 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0369575349D8B7F91BE3AC07EC576DC8 /* UISideMenuNavigationController.swift */; };
 		90CDCEF15BEE5175283C47BFBB558E8C /* Pods-ParkStash Coding Challenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 146ED8CDA95FF8A254CEEF36105BBE97 /* Pods-ParkStash Coding Challenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5DC4EB1513FAF76752A69A317E5357E /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB323BB3B2B0A52D555C01DBCD0305 /* SideMenuTransition.swift */; };
+		C5DC4EB1513FAF76752A69A317E5357E /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB04CE267A85DA7E128606829B7FEA9 /* SideMenuTransition.swift */; };
 		CACA959465BF9C0F149FA98A040BBAA4 /* Pods-ParkStash Coding Challenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1618C75E60AA13D19D2F2FEDC26A6A /* Pods-ParkStash Coding Challenge-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -30,30 +30,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0049F4BA49D06E8F4C1A0DF192A1FB11 /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
+		0369575349D8B7F91BE3AC07EC576DC8 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISideMenuNavigationController.swift; path = Pod/Classes/UISideMenuNavigationController.swift; sourceTree = "<group>"; };
+		07A7219673FCB2BB889A5A2C4B2BEBA2 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		08404347FCEAA12B5B0FD9B1B6B0A2A3 /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
 		146ED8CDA95FF8A254CEEF36105BBE97 /* Pods-ParkStash Coding Challenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParkStash Coding Challenge-umbrella.h"; sourceTree = "<group>"; };
 		1B5A35823A88F02F167B3A3A91887308 /* Pods-ParkStash Coding Challenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ParkStash Coding Challenge.modulemap"; sourceTree = "<group>"; };
-		35093DD994A172D53932151A6DBAEBC3 /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
-		38FF13F0BB1AB42B2F1C6A72A59BD82F /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
+		2858989B0561E1F6061D54343FD0CD9B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32EB1BE469F0066F1064104586E0CE9D /* GooglePlacePicker.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlacePicker.bundle; path = Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle; sourceTree = "<group>"; };
+		38605FA2FEC4FA8C2EB7259426137A08 /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
 		42C0EAFF6D34B7100F262D5B15CE727D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50D6026F2E412A250526BE2C0FCBE94D /* Pods-ParkStash Coding Challenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParkStash Coding Challenge-acknowledgements.markdown"; sourceTree = "<group>"; };
+		51CA87EEBCB318A4B7F23FD304924EFF /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
+		5355720DDFB378B7AFFB70EE24E62F52 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		56F987165B6C4D1348648D679023DC6A /* Pods-ParkStash Coding Challenge-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParkStash Coding Challenge-resources.sh"; sourceTree = "<group>"; };
+		645EC588A4745F134CD72C9D23979888 /* GooglePlacePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlacePicker.framework; path = Frameworks/GooglePlacePicker.framework; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6CF81980B2B851D5ED4718BC47020609 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
+		663E5F49077395BC1837B970948776C7 /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
+		6C55EF1B0227D1E494375F70B68A7BDE /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
 		72CA9715C89E372B68B75626C3059809 /* Pods-ParkStash Coding Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParkStash Coding Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		742A9DD90440BA858CEF120D5E4266F8 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenu.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B1618C75E60AA13D19D2F2FEDC26A6A /* Pods-ParkStash Coding Challenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParkStash Coding Challenge-dummy.m"; sourceTree = "<group>"; };
+		8BB04CE267A85DA7E128606829B7FEA9 /* SideMenuTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransition.swift; path = Pod/Classes/SideMenuTransition.swift; sourceTree = "<group>"; };
+		8FCC14D428CE0E40A3BABBA8BC4CB730 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
 		91132EFE66DC9BAA927ED402EEC9E00B /* Pods_ParkStash_Coding_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParkStash_Coding_Challenge.framework; path = "Pods-ParkStash Coding Challenge.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		995DC884942ED5E9B85C72A343F9AB5D /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SideMenu.modulemap; sourceTree = "<group>"; };
+		9D7D9DD5EA1C348EBB9095DBA38A6FBA /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
 		A015E69766B16BAAA6FC446A6BA6471C /* Pods-ParkStash Coding Challenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParkStash Coding Challenge-frameworks.sh"; sourceTree = "<group>"; };
-		A9DB323BB3B2B0A52D555C01DBCD0305 /* SideMenuTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransition.swift; path = Pod/Classes/SideMenuTransition.swift; sourceTree = "<group>"; };
+		A32AC1FD189FB893186F9A9A3B966E16 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
 		CFF64C534A24655E69DDC6B623DE0063 /* Pods-ParkStash Coding Challenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParkStash Coding Challenge-acknowledgements.plist"; sourceTree = "<group>"; };
 		D41DF6C74B50DAF0BC7FB41C57354BCC /* Pods-ParkStash Coding Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParkStash Coding Challenge.debug.xcconfig"; sourceTree = "<group>"; };
-		E72E3ED37D9B76098CC2B9BB49D386DF /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
-		EA4F5E4E267C03BAC23C64C2DEC825B6 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISideMenuNavigationController.swift; path = Pod/Classes/UISideMenuNavigationController.swift; sourceTree = "<group>"; };
-		FBB886EBE499ADAF32629979A36A3169 /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
-		FC0BD2A3E45C40B9C9716812311BF563 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D42774A40E4271C13C9F980F96084FD9 /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SideMenu.modulemap; sourceTree = "<group>"; };
+		FE8B9326DCB082128575DB8EB834C427 /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
+		FF4998E8DF22EF3C72F2DBBA3CA13613 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,25 +102,76 @@
 			path = "Target Support Files/Pods-ParkStash Coding Challenge";
 			sourceTree = "<group>";
 		};
-		4C7DECB9505A3661801AB8D77F9249EF /* Pods */ = {
+		20C87D290FF3D0A1DB36D32D21E42F52 /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				6139AD2A3B1702A32298B3F55914EA43 /* SideMenu */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		6139AD2A3B1702A32298B3F55914EA43 /* SideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				0049F4BA49D06E8F4C1A0DF192A1FB11 /* SideMenuManager.swift */,
-				A9DB323BB3B2B0A52D555C01DBCD0305 /* SideMenuTransition.swift */,
-				EA4F5E4E267C03BAC23C64C2DEC825B6 /* UISideMenuNavigationController.swift */,
-				38FF13F0BB1AB42B2F1C6A72A59BD82F /* UITableViewVibrantCell.swift */,
-				F9853A6F97D22D33E240344F832559E2 /* Support Files */,
+				38605FA2FEC4FA8C2EB7259426137A08 /* SideMenuManager.swift */,
+				8BB04CE267A85DA7E128606829B7FEA9 /* SideMenuTransition.swift */,
+				0369575349D8B7F91BE3AC07EC576DC8 /* UISideMenuNavigationController.swift */,
+				51CA87EEBCB318A4B7F23FD304924EFF /* UITableViewVibrantCell.swift */,
+				7D542BBD7F88FBF3B22F5D098FE7FF06 /* Support Files */,
 			);
 			name = SideMenu;
 			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		2281D8E209DB8CDC562F0FF61852CFFE /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				6EBD4D6C639637E773EA241053415A33 /* Base */,
+				37ECFD0D3ADF516213590FA8FE4A9243 /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		2E33D0AFF9DE01F9298787CA3486B747 /* GooglePlacePicker */ = {
+			isa = PBXGroup;
+			children = (
+				DE082DB3339595FA02D0E69B5D4C4B66 /* Frameworks */,
+				9FD00B3F565E4F859CCBC9B9B45160E5 /* Resources */,
+			);
+			name = GooglePlacePicker;
+			path = GooglePlacePicker;
+			sourceTree = "<group>";
+		};
+		3154D8B0855EAAED319877212A91DA0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF4998E8DF22EF3C72F2DBBA3CA13613 /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37ECFD0D3ADF516213590FA8FE4A9243 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				D81D797508161879FCD43100CF22CAEF /* Frameworks */,
+				CCBDF0F06548E6CA6296871AFE0A5CE6 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		6EBD4D6C639637E773EA241053415A33 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B738E90B586A799860562D30FD548A5A /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		7D542BBD7F88FBF3B22F5D098FE7FF06 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2858989B0561E1F6061D54343FD0CD9B /* Info.plist */,
+				D42774A40E4271C13C9F980F96084FD9 /* SideMenu.modulemap */,
+				FE8B9326DCB082128575DB8EB834C427 /* SideMenu.xcconfig */,
+				663E5F49077395BC1837B970948776C7 /* SideMenu-dummy.m */,
+				8FCC14D428CE0E40A3BABBA8BC4CB730 /* SideMenu-prefix.pch */,
+				08404347FCEAA12B5B0FD9B1B6B0A2A3 /* SideMenu-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SideMenu";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -120,10 +179,26 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				4C7DECB9505A3661801AB8D77F9249EF /* Pods */,
+				C1BE1F4C26185AE5F4EB99C6C1078837 /* Pods */,
 				FBFA7BE9F85593994E0EC7DF5734B95D /* Products */,
 				E23DFB876ACC6E55AA1332DF874FF1F6 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		9FD00B3F565E4F859CCBC9B9B45160E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32EB1BE469F0066F1064104586E0CE9D /* GooglePlacePicker.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B738E90B586A799860562D30FD548A5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C55EF1B0227D1E494375F70B68A7BDE /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -134,12 +209,56 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C1BE1F4C26185AE5F4EB99C6C1078837 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2281D8E209DB8CDC562F0FF61852CFFE /* GoogleMaps */,
+				2E33D0AFF9DE01F9298787CA3486B747 /* GooglePlacePicker */,
+				F391BD4FF7E36DD3D5D8705E205BD997 /* GooglePlaces */,
+				20C87D290FF3D0A1DB36D32D21E42F52 /* SideMenu */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CCBDF0F06548E6CA6296871AFE0A5CE6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				07A7219673FCB2BB889A5A2C4B2BEBA2 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		D81D797508161879FCD43100CF22CAEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A32AC1FD189FB893186F9A9A3B966E16 /* GoogleMaps.framework */,
+				5355720DDFB378B7AFFB70EE24E62F52 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE082DB3339595FA02D0E69B5D4C4B66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				645EC588A4745F134CD72C9D23979888 /* GooglePlacePicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE376A929371F34C62B9675CB3B2A880 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D7D9DD5EA1C348EBB9095DBA38A6FBA /* GooglePlaces.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		E23DFB876ACC6E55AA1332DF874FF1F6 /* Targets Support Files */ = {
@@ -150,18 +269,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F9853A6F97D22D33E240344F832559E2 /* Support Files */ = {
+		F391BD4FF7E36DD3D5D8705E205BD997 /* GooglePlaces */ = {
 			isa = PBXGroup;
 			children = (
-				FC0BD2A3E45C40B9C9716812311BF563 /* Info.plist */,
-				995DC884942ED5E9B85C72A343F9AB5D /* SideMenu.modulemap */,
-				FBB886EBE499ADAF32629979A36A3169 /* SideMenu.xcconfig */,
-				35093DD994A172D53932151A6DBAEBC3 /* SideMenu-dummy.m */,
-				6CF81980B2B851D5ED4718BC47020609 /* SideMenu-prefix.pch */,
-				E72E3ED37D9B76098CC2B9BB49D386DF /* SideMenu-umbrella.h */,
+				3154D8B0855EAAED319877212A91DA0F /* Frameworks */,
+				DE376A929371F34C62B9675CB3B2A880 /* Resources */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SideMenu";
+			name = GooglePlaces;
+			path = GooglePlaces;
 			sourceTree = "<group>";
 		};
 		FBFA7BE9F85593994E0EC7DF5734B95D /* Products */ = {
@@ -420,7 +535,7 @@
 		};
 		7478606A31CF5F72219B1743E38AF891 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBB886EBE499ADAF32629979A36A3169 /* SideMenu.xcconfig */;
+			baseConfigurationReference = FE8B9326DCB082128575DB8EB834C427 /* SideMenu.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -506,7 +621,7 @@
 		};
 		9E883106C7FDE490EB98272E0EBB5E60 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBB886EBE499ADAF32629979A36A3169 /* SideMenu.xcconfig */;
+			baseConfigurationReference = FE8B9326DCB082128575DB8EB834C427 /* SideMenu.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
