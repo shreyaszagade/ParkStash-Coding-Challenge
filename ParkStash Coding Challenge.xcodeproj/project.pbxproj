@@ -46,6 +46,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78274C0C20649B7200C7740D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78274C092064967600C7740D /* DataStore.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		78274C0F20649BA500C7740D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				78864A232062E49800BDC7E7 /* ViewController.swift */,
+				78864A332062FF3D00BDC7E7 /* LeftViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		78274C1120649BBD00C7740D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78274C1320649C0600C7740D /* Cell Classes */,
+				78864A252062E49800BDC7E7 /* Main.storyboard */,
+				78864A2A2062E49800BDC7E7 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		78274C1220649BDF00C7740D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78864A212062E49800BDC7E7 /* AppDelegate.swift */,
+				78864A282062E49800BDC7E7 /* Assets.xcassets */,
+				78864A2D2062E49800BDC7E7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78274C1320649C0600C7740D /* Cell Classes */ = {
+			isa = PBXGroup;
+			children = (
+				78274C072063D71E00C7740D /* LeftMenuTableCell.swift */,
+			);
+			name = "Cell Classes";
+			sourceTree = "<group>";
+		};
 		78864A152062E49800BDC7E7 = {
 			isa = PBXGroup;
 			children = (
@@ -67,15 +112,10 @@
 		78864A202062E49800BDC7E7 /* ParkStash Coding Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				78864A212062E49800BDC7E7 /* AppDelegate.swift */,
-				78274C092064967600C7740D /* DataStore.swift */,
-				78864A232062E49800BDC7E7 /* ViewController.swift */,
-				78864A252062E49800BDC7E7 /* Main.storyboard */,
-				78864A282062E49800BDC7E7 /* Assets.xcassets */,
-				78864A2A2062E49800BDC7E7 /* LaunchScreen.storyboard */,
-				78864A2D2062E49800BDC7E7 /* Info.plist */,
-				78864A332062FF3D00BDC7E7 /* LeftViewController.swift */,
-				78274C072063D71E00C7740D /* LeftMenuTableCell.swift */,
+				78274C0F20649BA500C7740D /* Controller */,
+				78274C1120649BBD00C7740D /* View */,
+				78274C0C20649B7200C7740D /* Model */,
+				78274C1220649BDF00C7740D /* Supporting Files */,
 			);
 			path = "ParkStash Coding Challenge";
 			sourceTree = "<group>";

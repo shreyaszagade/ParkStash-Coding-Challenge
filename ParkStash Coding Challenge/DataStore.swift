@@ -15,6 +15,12 @@ class DataStore{
     
     static func saveData(lat : Double, long : Double) -> Bool{
         do{
+            try Locksmith.deleteDataForUserAccount(userAccount: USER_ACCOUNT)
+        }catch{
+            print("Data Does not exists")
+        }
+        
+        do{
             try Locksmith.saveData(data: ["latitude": lat, "longitude" : long], forUserAccount: USER_ACCOUNT)
             return true
         }catch{
