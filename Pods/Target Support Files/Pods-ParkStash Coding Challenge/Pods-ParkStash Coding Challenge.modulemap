@@ -1,0 +1,6 @@
+framework module Pods_ParkStash_Coding_Challenge {
+  umbrella header "Pods-ParkStash Coding Challenge-umbrella.h"
+
+  export *
+  module * { export * }
+}
