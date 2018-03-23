@@ -11,24 +11,22 @@ import SideMenu
 import GooglePlaces
 import GooglePlacePicker
 import GoogleMaps
+import Locksmith
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var mapView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         SideMenuManager.default.menuPresentMode = .menuSlideIn
         SideMenuManager.default.menuFadeStatusBar = false
         
-        
-        
-        
+        var (latitude, longitude) = DataStore.retriveDataOrDefault()
+        setupMap(latitude: latitude, longitude: longitude)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func searchButtonClicked(_ sender: UIBarButtonItem) {
@@ -37,41 +35,35 @@ class ViewController: UIViewController {
         present(autocompleteController, animated: true, completion: nil)
     }
     
-}
-
-extension ViewController: GMSAutocompleteViewControllerDelegate {
-    
-    // Handle the user's selection.
-    func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
-        print(place.coordinate)
-        print("Place name: \(place.name)")
-        print("Place address: \(place.formattedAddress)")
-        print("Place attributions: \(place.attributions)")
-        dismiss(animated: true, completion: nil)
-        
-        //
-        let camera = GMSCameraPosition.camera(withLatitude: place.coordinate.latitude, longitude: place.coordinate.longitude, zoom: 18.0)
+    func setupMap(latitude : Double, longitude : Double, name : String = ""){
+        let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 18.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
         
         let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: place.coordinate.latitude, longitude: place.coordinate.longitude)
-        marker.title = place.name
+        marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        marker.title = name
         marker.map = mapView
-        
+    }
+    
+}
+
+extension ViewController: GMSAutocompleteViewControllerDelegate {
+    
+    func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
+        dismiss(animated: true, completion: nil)
+        DataStore.saveData(lat: place.coordinate.latitude, long: place.coordinate.longitude)
+        setupMap(latitude: place.coordinate.latitude, longitude: place.coordinate.longitude, name: place.name)
     }
     
     func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
-        // TODO: handle the error.
         print("Error: ", error.localizedDescription)
     }
     
-    // User canceled the operation.
     func wasCancelled(_ viewController: GMSAutocompleteViewController) {
         dismiss(animated: true, completion: nil)
     }
     
-    // Turn the network activity indicator on and off again.
     func didRequestAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
     }

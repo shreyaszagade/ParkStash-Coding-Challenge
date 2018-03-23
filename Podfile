@@ -8,6 +8,7 @@ target 'ParkStash Coding Challenge' do
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
   pod 'GoogleMaps'
+  pod 'Locksmith'
   # Pods for ParkStash Coding Challenge
 
 end

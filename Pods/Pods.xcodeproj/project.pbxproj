@@ -7,83 +7,174 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09F22F18A22CCAC95FB49E33AF712632 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		154DD6D04BFD3415A15B425DCE36895A /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38605FA2FEC4FA8C2EB7259426137A08 /* SideMenuManager.swift */; };
-		443B61E3AD90D9E7FB1E7D9B3DCD130C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		44732B31AE803ADE1643603FC620FD69 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CA87EEBCB318A4B7F23FD304924EFF /* UITableViewVibrantCell.swift */; };
-		484BF8FBA94D507AA8C7056C25C750F2 /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08404347FCEAA12B5B0FD9B1B6B0A2A3 /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48C2E9290C2FC3381D09966D29FA9F7F /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 663E5F49077395BC1837B970948776C7 /* SideMenu-dummy.m */; };
-		6619AA9FA7DB768BADE95D69D282E826 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0369575349D8B7F91BE3AC07EC576DC8 /* UISideMenuNavigationController.swift */; };
-		90CDCEF15BEE5175283C47BFBB558E8C /* Pods-ParkStash Coding Challenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 146ED8CDA95FF8A254CEEF36105BBE97 /* Pods-ParkStash Coding Challenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5DC4EB1513FAF76752A69A317E5357E /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB04CE267A85DA7E128606829B7FEA9 /* SideMenuTransition.swift */; };
-		CACA959465BF9C0F149FA98A040BBAA4 /* Pods-ParkStash Coding Challenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1618C75E60AA13D19D2F2FEDC26A6A /* Pods-ParkStash Coding Challenge-dummy.m */; };
+		006E33F2D4BBF271402C802F0EED9A32 /* Dictionary_Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC02524440D0517436D8DA3400A979FF /* Dictionary_Initializers.swift */; };
+		0196412EE55A7221601C4B0EBD0B8F6E /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BC3065B679226337941AF5AFC3B56B /* SideMenu-dummy.m */; };
+		1F0855EF3FCF0EFE13C50CA329A2156B /* LocksmithAccessibleOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D013BA5C249EA11EABBAFD2971EA19 /* LocksmithAccessibleOption.swift */; };
+		27D889D317A485E463FE504E54F451FF /* Locksmith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9E324263E38357ECC1D1952A0DC4B2 /* Locksmith.swift */; };
+		412A004993A38C0F05A6B311F0A0C838 /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C29758CCD80971041D25F315A6F7CFB7 /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4786322924386976C6ECE61311F55988 /* Pods-ParkStash Coding Challenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1618C75E60AA13D19D2F2FEDC26A6A /* Pods-ParkStash Coding Challenge-dummy.m */; };
+		78B2338EFDF22FFA6575BA90469BEB29 /* Locksmith-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D631E395871874DC22D65AAC0F4D5714 /* Locksmith-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B9CC71BB98E08B8ED486B04BA3FA5D7 /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4353A0786A4E6896DB335EA32BB19990 /* SideMenuTransition.swift */; };
+		7FBDA22BC8E282470B033630D9E5210F /* LocksmithSecurityClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2C90278AF60E982C8DAAC7D4CA134 /* LocksmithSecurityClass.swift */; };
+		8809B1EEDC655DE4DDA38760E2593004 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11849363860971E8B6652DD6F1DBBB /* UISideMenuNavigationController.swift */; };
+		8CC4A8C096A3901A7EBD2B59A0F3B443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		8D3BB10C30B780347AAB0ECB7895FF2F /* LocksmithError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2B4DED88F54D4B061E154C6A32CE92 /* LocksmithError.swift */; };
+		8FA9B26AA518B65A03682A1781E2B4D1 /* Locksmith.h in Headers */ = {isa = PBXBuildFile; fileRef = C4AB26696B2F780531B93B187EAAF50D /* Locksmith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91AD45B427E4480C4D958A58666D789E /* LocksmithInternetAuthenticationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDD0AE17F6A4E2DD0E71188AD64A6D4 /* LocksmithInternetAuthenticationType.swift */; };
+		9E22BFDB83730BA61511AB1ACF40F162 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EC9A386009B981EB0A0EB0FB627249 /* SideMenuManager.swift */; };
+		A1AD29352847CE072FF5B08E7312D6A5 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B595C63FE6451F227C56C20D57CFF /* UITableViewVibrantCell.swift */; };
+		A4B0C31707435CD6EC8145073A18DE6F /* Pods-ParkStash Coding Challenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 146ED8CDA95FF8A254CEEF36105BBE97 /* Pods-ParkStash Coding Challenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACDE90DC6E9F939AA6745DB264EEAF07 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */; };
+		B875F14E78DB15D8C4D65BB69E55BA04 /* Locksmith-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A7ABEFFB0380A166C7B2EA04BE30A5 /* Locksmith-dummy.m */; };
+		C85B1EEC3DEFF5B0CD3C7893E7F62E6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		CAA418DF1176F5AA55E12FBAB8860CED /* LocksmithInternetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6B3CA86535CBFA3BB83B20BD1030FD /* LocksmithInternetProtocol.swift */; };
+		F0DA4C4DF065C6F5D6578E1076014967 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B04D4C78F8038D5327CEEAA80214B97A /* PBXContainerItemProxy */ = {
+		7A1DAECE94771873D5A9778A45E20F35 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9A407519C18CDB9E72B34EC2F6AB2CD4;
+			remoteGlobalIDString = 3B54CBE15503502FD02968EA9D39D766;
 			remoteInfo = SideMenu;
+		};
+		B80968E494395A1C804FEB07CEEFD0F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7F727D48928BF47D913AFC48BB6A978;
+			remoteInfo = Locksmith;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0369575349D8B7F91BE3AC07EC576DC8 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISideMenuNavigationController.swift; path = Pod/Classes/UISideMenuNavigationController.swift; sourceTree = "<group>"; };
-		07A7219673FCB2BB889A5A2C4B2BEBA2 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		08404347FCEAA12B5B0FD9B1B6B0A2A3 /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
+		09AD428C9135980A7C837CDB94A9CC05 /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
+		11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		12BFDE93F37077CD0713CE29BAA5749A /* Locksmith.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Locksmith.xcconfig; sourceTree = "<group>"; };
 		146ED8CDA95FF8A254CEEF36105BBE97 /* Pods-ParkStash Coding Challenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParkStash Coding Challenge-umbrella.h"; sourceTree = "<group>"; };
+		18F4878681C0B14841A30F7C8363FBDB /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
 		1B5A35823A88F02F167B3A3A91887308 /* Pods-ParkStash Coding Challenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ParkStash Coding Challenge.modulemap"; sourceTree = "<group>"; };
-		2858989B0561E1F6061D54343FD0CD9B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32EB1BE469F0066F1064104586E0CE9D /* GooglePlacePicker.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlacePicker.bundle; path = Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle; sourceTree = "<group>"; };
-		38605FA2FEC4FA8C2EB7259426137A08 /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
+		2564CE43DD0F32CC172C824C736E5EEA /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		3873A40E5499C6A40AC9C91BD6689CCF /* Locksmith.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Locksmith.modulemap; sourceTree = "<group>"; };
+		426118532057321FA20F69D3CD511E8C /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		42C0EAFF6D34B7100F262D5B15CE727D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4353A0786A4E6896DB335EA32BB19990 /* SideMenuTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransition.swift; path = Pod/Classes/SideMenuTransition.swift; sourceTree = "<group>"; };
+		4801DE2F02FA13C465877AF7B47D0E77 /* Locksmith-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Locksmith-prefix.pch"; sourceTree = "<group>"; };
+		50D013BA5C249EA11EABBAFD2971EA19 /* LocksmithAccessibleOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithAccessibleOption.swift; path = Source/LocksmithAccessibleOption.swift; sourceTree = "<group>"; };
 		50D6026F2E412A250526BE2C0FCBE94D /* Pods-ParkStash Coding Challenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParkStash Coding Challenge-acknowledgements.markdown"; sourceTree = "<group>"; };
-		51CA87EEBCB318A4B7F23FD304924EFF /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
-		5355720DDFB378B7AFFB70EE24E62F52 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		56A7ABEFFB0380A166C7B2EA04BE30A5 /* Locksmith-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Locksmith-dummy.m"; sourceTree = "<group>"; };
 		56F987165B6C4D1348648D679023DC6A /* Pods-ParkStash Coding Challenge-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParkStash Coding Challenge-resources.sh"; sourceTree = "<group>"; };
-		645EC588A4745F134CD72C9D23979888 /* GooglePlacePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlacePicker.framework; path = Frameworks/GooglePlacePicker.framework; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		663E5F49077395BC1837B970948776C7 /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
-		6C55EF1B0227D1E494375F70B68A7BDE /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		5879060938AF875708BC0DB25CB39D5F /* GooglePlacePicker.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlacePicker.bundle; path = Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle; sourceTree = "<group>"; };
+		5E6B3CA86535CBFA3BB83B20BD1030FD /* LocksmithInternetProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithInternetProtocol.swift; path = Source/LocksmithInternetProtocol.swift; sourceTree = "<group>"; };
+		5F5EE4B0CF33F937A95A2E470A3440AC /* Pods_ParkStash_Coding_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParkStash_Coding_Challenge.framework; path = "Pods-ParkStash Coding Challenge.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61B2C90278AF60E982C8DAAC7D4CA134 /* LocksmithSecurityClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithSecurityClass.swift; path = Source/LocksmithSecurityClass.swift; sourceTree = "<group>"; };
+		66EC9A386009B981EB0A0EB0FB627249 /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
+		6A9E324263E38357ECC1D1952A0DC4B2 /* Locksmith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Locksmith.swift; path = Source/Locksmith.swift; sourceTree = "<group>"; };
+		6D10AAFFC9C6B4831DAFEE90BCA3DCBC /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		70508E7860BBC0111B704F6E3333BB35 /* GooglePlacePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlacePicker.framework; path = Frameworks/GooglePlacePicker.framework; sourceTree = "<group>"; };
 		72CA9715C89E372B68B75626C3059809 /* Pods-ParkStash Coding Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParkStash Coding Challenge.release.xcconfig"; sourceTree = "<group>"; };
-		742A9DD90440BA858CEF120D5E4266F8 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenu.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7453F8913106F36BE675C10837473193 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		7708D74988622795BB72089A95793011 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B1618C75E60AA13D19D2F2FEDC26A6A /* Pods-ParkStash Coding Challenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParkStash Coding Challenge-dummy.m"; sourceTree = "<group>"; };
-		8BB04CE267A85DA7E128606829B7FEA9 /* SideMenuTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransition.swift; path = Pod/Classes/SideMenuTransition.swift; sourceTree = "<group>"; };
-		8FCC14D428CE0E40A3BABBA8BC4CB730 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
-		91132EFE66DC9BAA927ED402EEC9E00B /* Pods_ParkStash_Coding_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParkStash_Coding_Challenge.framework; path = "Pods-ParkStash Coding Challenge.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E2B4DED88F54D4B061E154C6A32CE92 /* LocksmithError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithError.swift; path = Source/LocksmithError.swift; sourceTree = "<group>"; };
+		8460701296631C4014C9D1F2C1907F6E /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		851754E47E5455D865563067942AD126 /* Locksmith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Locksmith.framework; path = Locksmith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		878ACCFF040A67FEA4B5F17DE205DF8B /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D7D9DD5EA1C348EBB9095DBA38A6FBA /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		9EDD0AE17F6A4E2DD0E71188AD64A6D4 /* LocksmithInternetAuthenticationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithInternetAuthenticationType.swift; path = Source/LocksmithInternetAuthenticationType.swift; sourceTree = "<group>"; };
 		A015E69766B16BAAA6FC446A6BA6471C /* Pods-ParkStash Coding Challenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParkStash Coding Challenge-frameworks.sh"; sourceTree = "<group>"; };
-		A32AC1FD189FB893186F9A9A3B966E16 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		A0BC3065B679226337941AF5AFC3B56B /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
+		AC11849363860971E8B6652DD6F1DBBB /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISideMenuNavigationController.swift; path = Pod/Classes/UISideMenuNavigationController.swift; sourceTree = "<group>"; };
+		C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		C29758CCD80971041D25F315A6F7CFB7 /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
+		C4AB26696B2F780531B93B187EAAF50D /* Locksmith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Locksmith.h; path = Source/Locksmith.h; sourceTree = "<group>"; };
+		CC02524440D0517436D8DA3400A979FF /* Dictionary_Initializers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dictionary_Initializers.swift; path = Source/Dictionary_Initializers.swift; sourceTree = "<group>"; };
 		CFF64C534A24655E69DDC6B623DE0063 /* Pods-ParkStash Coding Challenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParkStash Coding Challenge-acknowledgements.plist"; sourceTree = "<group>"; };
+		D358775BE231A01D30778B3201C6CA4F /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SideMenu.modulemap; sourceTree = "<group>"; };
 		D41DF6C74B50DAF0BC7FB41C57354BCC /* Pods-ParkStash Coding Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParkStash Coding Challenge.debug.xcconfig"; sourceTree = "<group>"; };
-		D42774A40E4271C13C9F980F96084FD9 /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SideMenu.modulemap; sourceTree = "<group>"; };
-		FE8B9326DCB082128575DB8EB834C427 /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
-		FF4998E8DF22EF3C72F2DBBA3CA13613 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		D631E395871874DC22D65AAC0F4D5714 /* Locksmith-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Locksmith-umbrella.h"; sourceTree = "<group>"; };
+		F497F9E5514A518D895DE4CF789EC964 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenu.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5807C8C7161E484DBE0B2C54425DF87 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA4B595C63FE6451F227C56C20D57CFF /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		824925004F25CCC7756FB4C4F705DA5B /* Frameworks */ = {
+		3020DF48C67F565DA8A6F0F32859C39C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09F22F18A22CCAC95FB49E33AF712632 /* Foundation.framework in Frameworks */,
+				C85B1EEC3DEFF5B0CD3C7893E7F62E6E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD170BE4F8767AA0CAB0C24651708D14 /* Frameworks */ = {
+		B27A45FE84D90C6546E81ABCE6786600 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				443B61E3AD90D9E7FB1E7D9B3DCD130C /* Foundation.framework in Frameworks */,
+				F0DA4C4DF065C6F5D6578E1076014967 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE23ABFDEA2F6A85A5CA8B3557C0B77A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC4A8C096A3901A7EBD2B59A0F3B443 /* Foundation.framework in Frameworks */,
+				ACDE90DC6E9F939AA6745DB264EEAF07 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		030E074B9C40370C0EFBEF32BE3BBA86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2564CE43DD0F32CC172C824C736E5EEA /* GoogleMaps.framework */,
+				6D10AAFFC9C6B4831DAFEE90BCA3DCBC /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0726EE1DB96DDD243DEAE36B92DEE2F9 /* GooglePlacePicker */ = {
+			isa = PBXGroup;
+			children = (
+				A402F462AEF05BB21A104C2A06C2C18D /* Frameworks */,
+				51471C32A16E25144F7C5503ADECB742 /* Resources */,
+			);
+			name = GooglePlacePicker;
+			path = GooglePlacePicker;
+			sourceTree = "<group>";
+		};
+		07EBFED9BFFA0B638F75F391DE623D79 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E99EBE2CAB106F0BDF59039D2DE54596 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		12F45F6C079B76067C63E045DAAFA128 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				426118532057321FA20F69D3CD511E8C /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		168E9ECF400CDE9BF65462388D9ACD9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEAA02C7178BEB6F68E137674A5A4053 /* GoogleMaps */,
+				0726EE1DB96DDD243DEAE36B92DEE2F9 /* GooglePlacePicker */,
+				7EE040E8C6F0E544741959B329EB14AD /* GooglePlaces */,
+				9B81D2B1966F2EA385453BB033F1BA87 /* Locksmith */,
+				F0F2F13535AC79FACAFECC44A6C4B3CD /* SideMenu */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1E45321402A6D94D1E9D3EFDEC224207 /* Pods-ParkStash Coding Challenge */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,163 +193,148 @@
 			path = "Target Support Files/Pods-ParkStash Coding Challenge";
 			sourceTree = "<group>";
 		};
-		20C87D290FF3D0A1DB36D32D21E42F52 /* SideMenu */ = {
+		26D4BF2252BABE392C21EEAA4AD68925 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				38605FA2FEC4FA8C2EB7259426137A08 /* SideMenuManager.swift */,
-				8BB04CE267A85DA7E128606829B7FEA9 /* SideMenuTransition.swift */,
-				0369575349D8B7F91BE3AC07EC576DC8 /* UISideMenuNavigationController.swift */,
-				51CA87EEBCB318A4B7F23FD304924EFF /* UITableViewVibrantCell.swift */,
-				7D542BBD7F88FBF3B22F5D098FE7FF06 /* Support Files */,
+				F5807C8C7161E484DBE0B2C54425DF87 /* Info.plist */,
+				D358775BE231A01D30778B3201C6CA4F /* SideMenu.modulemap */,
+				09AD428C9135980A7C837CDB94A9CC05 /* SideMenu.xcconfig */,
+				A0BC3065B679226337941AF5AFC3B56B /* SideMenu-dummy.m */,
+				18F4878681C0B14841A30F7C8363FBDB /* SideMenu-prefix.pch */,
+				C29758CCD80971041D25F315A6F7CFB7 /* SideMenu-umbrella.h */,
 			);
-			name = SideMenu;
-			path = SideMenu;
+			name = "Support Files";
+			path = "../Target Support Files/SideMenu";
 			sourceTree = "<group>";
 		};
-		2281D8E209DB8CDC562F0FF61852CFFE /* GoogleMaps */ = {
+		43366E1FF2E286D404D544B7A9CD3D5D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6EBD4D6C639637E773EA241053415A33 /* Base */,
-				37ECFD0D3ADF516213590FA8FE4A9243 /* Maps */,
+				8460701296631C4014C9D1F2C1907F6E /* GooglePlaces.bundle */,
 			);
-			name = GoogleMaps;
-			path = GoogleMaps;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		2E33D0AFF9DE01F9298787CA3486B747 /* GooglePlacePicker */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DE082DB3339595FA02D0E69B5D4C4B66 /* Frameworks */,
-				9FD00B3F565E4F859CCBC9B9B45160E5 /* Resources */,
-			);
-			name = GooglePlacePicker;
-			path = GooglePlacePicker;
-			sourceTree = "<group>";
-		};
-		3154D8B0855EAAED319877212A91DA0F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FF4998E8DF22EF3C72F2DBBA3CA13613 /* GooglePlaces.framework */,
+				4F990579C2E52276FD3C28227B49D60B /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		37ECFD0D3ADF516213590FA8FE4A9243 /* Maps */ = {
+		4F990579C2E52276FD3C28227B49D60B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D81D797508161879FCD43100CF22CAEF /* Frameworks */,
-				CCBDF0F06548E6CA6296871AFE0A5CE6 /* Resources */,
+				11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */,
+				C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */,
 			);
-			name = Maps;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		6EBD4D6C639637E773EA241053415A33 /* Base */ = {
+		51471C32A16E25144F7C5503ADECB742 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B738E90B586A799860562D30FD548A5A /* Frameworks */,
+				5879060938AF875708BC0DB25CB39D5F /* GooglePlacePicker.bundle */,
 			);
-			name = Base;
-			sourceTree = "<group>";
-		};
-		7D542BBD7F88FBF3B22F5D098FE7FF06 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2858989B0561E1F6061D54343FD0CD9B /* Info.plist */,
-				D42774A40E4271C13C9F980F96084FD9 /* SideMenu.modulemap */,
-				FE8B9326DCB082128575DB8EB834C427 /* SideMenu.xcconfig */,
-				663E5F49077395BC1837B970948776C7 /* SideMenu-dummy.m */,
-				8FCC14D428CE0E40A3BABBA8BC4CB730 /* SideMenu-prefix.pch */,
-				08404347FCEAA12B5B0FD9B1B6B0A2A3 /* SideMenu-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SideMenu";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C1BE1F4C26185AE5F4EB99C6C1078837 /* Pods */,
-				FBFA7BE9F85593994E0EC7DF5734B95D /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				168E9ECF400CDE9BF65462388D9ACD9F /* Pods */,
+				81A858C48DF2CB8560AA17E232BCFB89 /* Products */,
 				E23DFB876ACC6E55AA1332DF874FF1F6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9FD00B3F565E4F859CCBC9B9B45160E5 /* Resources */ = {
+		7EE040E8C6F0E544741959B329EB14AD /* GooglePlaces */ = {
 			isa = PBXGroup;
 			children = (
-				32EB1BE469F0066F1064104586E0CE9D /* GooglePlacePicker.bundle */,
+				DD2846495C84539A4A12FBB5376041FE /* Frameworks */,
+				43366E1FF2E286D404D544B7A9CD3D5D /* Resources */,
 			);
-			name = Resources;
+			name = GooglePlaces;
+			path = GooglePlaces;
 			sourceTree = "<group>";
 		};
-		B738E90B586A799860562D30FD548A5A /* Frameworks */ = {
+		81A858C48DF2CB8560AA17E232BCFB89 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6C55EF1B0227D1E494375F70B68A7BDE /* GoogleMapsBase.framework */,
+				851754E47E5455D865563067942AD126 /* Locksmith.framework */,
+				5F5EE4B0CF33F937A95A2E470A3440AC /* Pods_ParkStash_Coding_Challenge.framework */,
+				F497F9E5514A518D895DE4CF789EC964 /* SideMenu.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B81D2B1966F2EA385453BB033F1BA87 /* Locksmith */ = {
+			isa = PBXGroup;
+			children = (
+				CC02524440D0517436D8DA3400A979FF /* Dictionary_Initializers.swift */,
+				C4AB26696B2F780531B93B187EAAF50D /* Locksmith.h */,
+				6A9E324263E38357ECC1D1952A0DC4B2 /* Locksmith.swift */,
+				50D013BA5C249EA11EABBAFD2971EA19 /* LocksmithAccessibleOption.swift */,
+				7E2B4DED88F54D4B061E154C6A32CE92 /* LocksmithError.swift */,
+				9EDD0AE17F6A4E2DD0E71188AD64A6D4 /* LocksmithInternetAuthenticationType.swift */,
+				5E6B3CA86535CBFA3BB83B20BD1030FD /* LocksmithInternetProtocol.swift */,
+				61B2C90278AF60E982C8DAAC7D4CA134 /* LocksmithSecurityClass.swift */,
+				A9F2B3FFAD96E4E63374E2334523FCA7 /* Support Files */,
+			);
+			name = Locksmith;
+			path = Locksmith;
+			sourceTree = "<group>";
+		};
+		A402F462AEF05BB21A104C2A06C2C18D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70508E7860BBC0111B704F6E3333BB35 /* GooglePlacePicker.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		A9F2B3FFAD96E4E63374E2334523FCA7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				7708D74988622795BB72089A95793011 /* Info.plist */,
+				3873A40E5499C6A40AC9C91BD6689CCF /* Locksmith.modulemap */,
+				12BFDE93F37077CD0713CE29BAA5749A /* Locksmith.xcconfig */,
+				56A7ABEFFB0380A166C7B2EA04BE30A5 /* Locksmith-dummy.m */,
+				4801DE2F02FA13C465877AF7B47D0E77 /* Locksmith-prefix.pch */,
+				D631E395871874DC22D65AAC0F4D5714 /* Locksmith-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Locksmith";
+			sourceTree = "<group>";
+		};
+		CA52492DCB9F00B5FB843FFD09902153 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				030E074B9C40370C0EFBEF32BE3BBA86 /* Frameworks */,
+				12F45F6C079B76067C63E045DAAFA128 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		DD2846495C84539A4A12FBB5376041FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7453F8913106F36BE675C10837473193 /* GooglePlaces.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C1BE1F4C26185AE5F4EB99C6C1078837 /* Pods */ = {
+		DEAA02C7178BEB6F68E137674A5A4053 /* GoogleMaps */ = {
 			isa = PBXGroup;
 			children = (
-				2281D8E209DB8CDC562F0FF61852CFFE /* GoogleMaps */,
-				2E33D0AFF9DE01F9298787CA3486B747 /* GooglePlacePicker */,
-				F391BD4FF7E36DD3D5D8705E205BD997 /* GooglePlaces */,
-				20C87D290FF3D0A1DB36D32D21E42F52 /* SideMenu */,
+				07EBFED9BFFA0B638F75F391DE623D79 /* Base */,
+				CA52492DCB9F00B5FB843FFD09902153 /* Maps */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		CCBDF0F06548E6CA6296871AFE0A5CE6 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				07A7219673FCB2BB889A5A2C4B2BEBA2 /* GoogleMaps.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		D81D797508161879FCD43100CF22CAEF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A32AC1FD189FB893186F9A9A3B966E16 /* GoogleMaps.framework */,
-				5355720DDFB378B7AFFB70EE24E62F52 /* GoogleMapsCore.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DE082DB3339595FA02D0E69B5D4C4B66 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				645EC588A4745F134CD72C9D23979888 /* GooglePlacePicker.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DE376A929371F34C62B9675CB3B2A880 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				9D7D9DD5EA1C348EBB9095DBA38A6FBA /* GooglePlaces.bundle */,
-			);
-			name = Resources;
+			name = GoogleMaps;
+			path = GoogleMaps;
 			sourceTree = "<group>";
 		};
 		E23DFB876ACC6E55AA1332DF874FF1F6 /* Targets Support Files */ = {
@@ -269,72 +345,84 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F391BD4FF7E36DD3D5D8705E205BD997 /* GooglePlaces */ = {
+		E99EBE2CAB106F0BDF59039D2DE54596 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3154D8B0855EAAED319877212A91DA0F /* Frameworks */,
-				DE376A929371F34C62B9675CB3B2A880 /* Resources */,
+				878ACCFF040A67FEA4B5F17DE205DF8B /* GoogleMapsBase.framework */,
 			);
-			name = GooglePlaces;
-			path = GooglePlaces;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FBFA7BE9F85593994E0EC7DF5734B95D /* Products */ = {
+		F0F2F13535AC79FACAFECC44A6C4B3CD /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				91132EFE66DC9BAA927ED402EEC9E00B /* Pods_ParkStash_Coding_Challenge.framework */,
-				742A9DD90440BA858CEF120D5E4266F8 /* SideMenu.framework */,
+				66EC9A386009B981EB0A0EB0FB627249 /* SideMenuManager.swift */,
+				4353A0786A4E6896DB335EA32BB19990 /* SideMenuTransition.swift */,
+				AC11849363860971E8B6652DD6F1DBBB /* UISideMenuNavigationController.swift */,
+				FA4B595C63FE6451F227C56C20D57CFF /* UITableViewVibrantCell.swift */,
+				26D4BF2252BABE392C21EEAA4AD68925 /* Support Files */,
 			);
-			name = Products;
+			name = SideMenu;
+			path = SideMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7C816B7B9863021A2CC0B29422C35997 /* Headers */ = {
+		0C38EA40E7FDCECA76A166DDB0DAFBA8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				484BF8FBA94D507AA8C7056C25C750F2 /* SideMenu-umbrella.h in Headers */,
+				A4B0C31707435CD6EC8145073A18DE6F /* Pods-ParkStash Coding Challenge-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5A52E365C273EF328A790AE6A09AA32 /* Headers */ = {
+		2D492B744311C91D72E84556E8649BEA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90CDCEF15BEE5175283C47BFBB558E8C /* Pods-ParkStash Coding Challenge-umbrella.h in Headers */,
+				412A004993A38C0F05A6B311F0A0C838 /* SideMenu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7CE5A9279112FAB14126410B4090631 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78B2338EFDF22FFA6575BA90469BEB29 /* Locksmith-umbrella.h in Headers */,
+				8FA9B26AA518B65A03682A1781E2B4D1 /* Locksmith.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		00A05AB3BF874FE7EA415EA8EADDB88F /* Pods-ParkStash Coding Challenge */ = {
+		21401E965D847E352062379901845986 /* Pods-ParkStash Coding Challenge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5006D0633CCE036843FDB3754B03CCE9 /* Build configuration list for PBXNativeTarget "Pods-ParkStash Coding Challenge" */;
+			buildConfigurationList = 62EEB33515D189E4005E9EEAD6B24B4C /* Build configuration list for PBXNativeTarget "Pods-ParkStash Coding Challenge" */;
 			buildPhases = (
-				3D028F82143B11DF54020FC8605F8BA2 /* Sources */,
-				824925004F25CCC7756FB4C4F705DA5B /* Frameworks */,
-				F5A52E365C273EF328A790AE6A09AA32 /* Headers */,
+				546AD3277505D2AE8A9FFB431169209E /* Sources */,
+				B27A45FE84D90C6546E81ABCE6786600 /* Frameworks */,
+				0C38EA40E7FDCECA76A166DDB0DAFBA8 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8AEC8BC813B9DDD79C606DD794F5827F /* PBXTargetDependency */,
+				FBF4014A21F9C2F0BBC7D41B42CD7456 /* PBXTargetDependency */,
+				E8AACB403838D04FD0DAE7C1DAAFB3DC /* PBXTargetDependency */,
 			);
 			name = "Pods-ParkStash Coding Challenge";
 			productName = "Pods-ParkStash Coding Challenge";
-			productReference = 91132EFE66DC9BAA927ED402EEC9E00B /* Pods_ParkStash_Coding_Challenge.framework */;
+			productReference = 5F5EE4B0CF33F937A95A2E470A3440AC /* Pods_ParkStash_Coding_Challenge.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9A407519C18CDB9E72B34EC2F6AB2CD4 /* SideMenu */ = {
+		3B54CBE15503502FD02968EA9D39D766 /* SideMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E6E8614FC18863C9BB8CC2EF2FBEC5D /* Build configuration list for PBXNativeTarget "SideMenu" */;
+			buildConfigurationList = 3A15D40F75C256B041F999299F9549C9 /* Build configuration list for PBXNativeTarget "SideMenu" */;
 			buildPhases = (
-				930E0106742E4F5929CB0EAFFC978C17 /* Sources */,
-				FD170BE4F8767AA0CAB0C24651708D14 /* Frameworks */,
-				7C816B7B9863021A2CC0B29422C35997 /* Headers */,
+				5B0DD3AF7D741996EB06E9E53D5C8F01 /* Sources */,
+				3020DF48C67F565DA8A6F0F32859C39C /* Frameworks */,
+				2D492B744311C91D72E84556E8649BEA /* Headers */,
 			);
 			buildRules = (
 			);
@@ -342,7 +430,24 @@
 			);
 			name = SideMenu;
 			productName = SideMenu;
-			productReference = 742A9DD90440BA858CEF120D5E4266F8 /* SideMenu.framework */;
+			productReference = F497F9E5514A518D895DE4CF789EC964 /* SideMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C7F727D48928BF47D913AFC48BB6A978 /* Locksmith */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 294A9EF2E0B6D19A24BE6E3D9E5072E1 /* Build configuration list for PBXNativeTarget "Locksmith" */;
+			buildPhases = (
+				890E4BABED82AB6D5F577BA651D79FD6 /* Sources */,
+				DE23ABFDEA2F6A85A5CA8B3557C0B77A /* Frameworks */,
+				D7CE5A9279112FAB14126410B4090631 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Locksmith;
+			productName = Locksmith;
+			productReference = 851754E47E5455D865563067942AD126 /* Locksmith.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -362,83 +467,71 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FBFA7BE9F85593994E0EC7DF5734B95D /* Products */;
+			productRefGroup = 81A858C48DF2CB8560AA17E232BCFB89 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				00A05AB3BF874FE7EA415EA8EADDB88F /* Pods-ParkStash Coding Challenge */,
-				9A407519C18CDB9E72B34EC2F6AB2CD4 /* SideMenu */,
+				C7F727D48928BF47D913AFC48BB6A978 /* Locksmith */,
+				21401E965D847E352062379901845986 /* Pods-ParkStash Coding Challenge */,
+				3B54CBE15503502FD02968EA9D39D766 /* SideMenu */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3D028F82143B11DF54020FC8605F8BA2 /* Sources */ = {
+		546AD3277505D2AE8A9FFB431169209E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CACA959465BF9C0F149FA98A040BBAA4 /* Pods-ParkStash Coding Challenge-dummy.m in Sources */,
+				4786322924386976C6ECE61311F55988 /* Pods-ParkStash Coding Challenge-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		930E0106742E4F5929CB0EAFFC978C17 /* Sources */ = {
+		5B0DD3AF7D741996EB06E9E53D5C8F01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48C2E9290C2FC3381D09966D29FA9F7F /* SideMenu-dummy.m in Sources */,
-				154DD6D04BFD3415A15B425DCE36895A /* SideMenuManager.swift in Sources */,
-				C5DC4EB1513FAF76752A69A317E5357E /* SideMenuTransition.swift in Sources */,
-				6619AA9FA7DB768BADE95D69D282E826 /* UISideMenuNavigationController.swift in Sources */,
-				44732B31AE803ADE1643603FC620FD69 /* UITableViewVibrantCell.swift in Sources */,
+				0196412EE55A7221601C4B0EBD0B8F6E /* SideMenu-dummy.m in Sources */,
+				9E22BFDB83730BA61511AB1ACF40F162 /* SideMenuManager.swift in Sources */,
+				7B9CC71BB98E08B8ED486B04BA3FA5D7 /* SideMenuTransition.swift in Sources */,
+				8809B1EEDC655DE4DDA38760E2593004 /* UISideMenuNavigationController.swift in Sources */,
+				A1AD29352847CE072FF5B08E7312D6A5 /* UITableViewVibrantCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		890E4BABED82AB6D5F577BA651D79FD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006E33F2D4BBF271402C802F0EED9A32 /* Dictionary_Initializers.swift in Sources */,
+				B875F14E78DB15D8C4D65BB69E55BA04 /* Locksmith-dummy.m in Sources */,
+				27D889D317A485E463FE504E54F451FF /* Locksmith.swift in Sources */,
+				1F0855EF3FCF0EFE13C50CA329A2156B /* LocksmithAccessibleOption.swift in Sources */,
+				8D3BB10C30B780347AAB0ECB7895FF2F /* LocksmithError.swift in Sources */,
+				91AD45B427E4480C4D958A58666D789E /* LocksmithInternetAuthenticationType.swift in Sources */,
+				CAA418DF1176F5AA55E12FBAB8860CED /* LocksmithInternetProtocol.swift in Sources */,
+				7FBDA22BC8E282470B033630D9E5210F /* LocksmithSecurityClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8AEC8BC813B9DDD79C606DD794F5827F /* PBXTargetDependency */ = {
+		E8AACB403838D04FD0DAE7C1DAAFB3DC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SideMenu;
-			target = 9A407519C18CDB9E72B34EC2F6AB2CD4 /* SideMenu */;
-			targetProxy = B04D4C78F8038D5327CEEAA80214B97A /* PBXContainerItemProxy */;
+			target = 3B54CBE15503502FD02968EA9D39D766 /* SideMenu */;
+			targetProxy = 7A1DAECE94771873D5A9778A45E20F35 /* PBXContainerItemProxy */;
+		};
+		FBF4014A21F9C2F0BBC7D41B42CD7456 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Locksmith;
+			target = C7F727D48928BF47D913AFC48BB6A978 /* Locksmith */;
+			targetProxy = B80968E494395A1C804FEB07CEEFD0F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		34F818393A5CFF3E16FC6BCC571DB960 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D41DF6C74B50DAF0BC7FB41C57354BCC /* Pods-ParkStash Coding Challenge.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ParkStash Coding Challenge/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ParkStash Coding Challenge/Pods-ParkStash Coding Challenge.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ParkStash_Coding_Challenge;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -499,43 +592,9 @@
 			};
 			name = Debug;
 		};
-		6BF70D1D6118F25FB8AFFE15F6D5E44A /* Release */ = {
+		41809FF13AD55407DD57D86D0BFAB32B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CA9715C89E372B68B75626C3059809 /* Pods-ParkStash Coding Challenge.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ParkStash Coding Challenge/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ParkStash Coding Challenge/Pods-ParkStash Coding Challenge.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ParkStash_Coding_Challenge;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7478606A31CF5F72219B1743E38AF891 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE8B9326DCB082128575DB8EB834C427 /* SideMenu.xcconfig */;
+			baseConfigurationReference = 09AD428C9135980A7C837CDB94A9CC05 /* SideMenu.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -563,6 +622,101 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		5128B792105148E3C16688FFAB9B5D28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12BFDE93F37077CD0713CE29BAA5749A /* Locksmith.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Locksmith/Locksmith-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Locksmith/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Locksmith/Locksmith.modulemap";
+				PRODUCT_NAME = Locksmith;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		52F43CAAE032F9C1B39AAA3684B1F7C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12BFDE93F37077CD0713CE29BAA5749A /* Locksmith.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Locksmith/Locksmith-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Locksmith/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Locksmith/Locksmith.modulemap";
+				PRODUCT_NAME = Locksmith;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		698C122C7497766A5511FA4E377E873C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09AD428C9135980A7C837CDB94A9CC05 /* SideMenu.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -619,9 +773,9 @@
 			};
 			name = Release;
 		};
-		9E883106C7FDE490EB98272E0EBB5E60 /* Release */ = {
+		E492AF4CB2AD8C42C4455F18582A8384 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE8B9326DCB082128575DB8EB834C427 /* SideMenu.xcconfig */;
+			baseConfigurationReference = D41DF6C74B50DAF0BC7FB41C57354BCC /* Pods-ParkStash Coding Challenge.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -632,18 +786,54 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ParkStash Coding Challenge/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
-				PRODUCT_NAME = SideMenu;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParkStash Coding Challenge/Pods-ParkStash Coding Challenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ParkStash_Coding_Challenge;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F42E3792668448C6A4276FF9F8CCE8D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72CA9715C89E372B68B75626C3059809 /* Pods-ParkStash Coding Challenge.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ParkStash Coding Challenge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParkStash Coding Challenge/Pods-ParkStash Coding Challenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ParkStash_Coding_Challenge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -654,6 +844,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		294A9EF2E0B6D19A24BE6E3D9E5072E1 /* Build configuration list for PBXNativeTarget "Locksmith" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F43CAAE032F9C1B39AAA3684B1F7C6 /* Debug */,
+				5128B792105148E3C16688FFAB9B5D28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -663,20 +862,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3E6E8614FC18863C9BB8CC2EF2FBEC5D /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
+		3A15D40F75C256B041F999299F9549C9 /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7478606A31CF5F72219B1743E38AF891 /* Debug */,
-				9E883106C7FDE490EB98272E0EBB5E60 /* Release */,
+				41809FF13AD55407DD57D86D0BFAB32B /* Debug */,
+				698C122C7497766A5511FA4E377E873C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5006D0633CCE036843FDB3754B03CCE9 /* Build configuration list for PBXNativeTarget "Pods-ParkStash Coding Challenge" */ = {
+		62EEB33515D189E4005E9EEAD6B24B4C /* Build configuration list for PBXNativeTarget "Pods-ParkStash Coding Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				34F818393A5CFF3E16FC6BCC571DB960 /* Debug */,
-				6BF70D1D6118F25FB8AFFE15F6D5E44A /* Release */,
+				E492AF4CB2AD8C42C4455F18582A8384 /* Debug */,
+				F42E3792668448C6A4276FF9F8CCE8D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
