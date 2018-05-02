@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    private final var G_MAP_API_KEY = "AIzaSyCU4ZZFTQqOIPJuA6x1__CI82egLuXpdxw"
+    private final var G_MAP_API_KEY = "Your Google Map API Key"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
